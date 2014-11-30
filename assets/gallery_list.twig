@@ -1,0 +1,14 @@
+<div class="centered-wrapper">
+	<ul class="gallery-page">
+        {% for image in gallery|order('time') %}
+		<li>
+			<a href="{{ image(image.path) }}" rel="prettyPhoto[pp_gal]" title="{{ image.name }}">
+				<span class="item-on-hover"><span class="hover-image"></span></span>
+				<img src="{{ thumbnail( image.path, 360, 1200, 'r') }}" alt=" " />
+			</a>
+		</li>
+		{% endfor %}				
+	</ul><!--end gallery-page-->
+
+<div class="clear"></div>
+</div><!--end centered-wrapper-->

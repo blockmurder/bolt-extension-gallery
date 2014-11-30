@@ -1,0 +1,8 @@
+# Configuration file for Gallery
+
+gallery_path: galleries    # example: /files/*gallery_path* --> gallery_path: galeries
+
+# this changes the pathstuctur to the galleries:
+# for by_year, path will be /files/*gallery_path*/*Year*/*Month*/*slug*
+# for unsorted, path will be /files/*gallery_path*/*slug*
+pathstructure: unsorted        # valid values: by_year, unsorted
